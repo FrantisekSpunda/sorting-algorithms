@@ -1,8 +1,8 @@
 {
-  "name": "ts-skeleton",
+  "name": "sorting-algorithms",
   "type": "module",
   "version": "1.0.0",
-  "description": "Skeleton for testing some bullshit in TS. Also docs all configuration for run typescript.",
+  "description": "Testing sorting algorithms for fun",
   "main": "index.js",
   "scripts": {
     "dev": "concurrently --kill-others \"tsc --watch\" \"nodemon ./dist\"",
