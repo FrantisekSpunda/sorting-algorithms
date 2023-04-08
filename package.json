@@ -1,0 +1,28 @@
+{
+  "name": "ts-skeleton",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Skeleton for testing some bullshit in TS. Also docs all configuration for run typescript.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently --kill-others \"tsc --watch\" \"nodemon ./dist\"",
+    "start": "node ./dist/index.js",
+    "build": "tsc"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "config"
+  ],
+  "author": "František Špunda",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "terminal-table-output": "^1.4.0"
+  }
+}

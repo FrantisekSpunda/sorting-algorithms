@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    // Set absolute path for TS.
+    "baseUrl": "./src",
+    // Define how TS is commpiled.NodeNext is for "type: module".
+    // CommonJS is used for classic JS, where we are using "require" insted of "import".
+    "module": "NodeNext",
+    // Here we are specifi way, how we are importing code from other files.
+    // With NodeNext we can use files .ts, .js for module"NodeNext" and use "import ... from ..."
+    // and CommonJS for files .cts, .cjs and use classic JS with "require('...')"
+    "moduleResolution": "NodeNext",
+    // This specify version of JS into witch is commpiled.
+    "target": "ES2022",
+    // Compile JS back to TS for better debugging.
+    "sourceMap": true,
+    // Folder where we want to compile our TS.
+    "outDir": "dist"
+  },
+  // Files witch we need compile.
+  "include": ["src/**/*"]
+}
